@@ -1,4 +1,5 @@
 
+
 def moyenne_Bac(note1,note2,note3,note4,note5,note6,note7,coef1,coef2,coef3,coef4,coef5,coef6,coef7):
 
     moyenneG = 0
@@ -22,22 +23,9 @@ def moyenne_Bac(note1,note2,note3,note4,note5,note6,note7,coef1,coef2,coef3,coef
 
     return Bac
 
-def TVA(prix,tva):
-    _newPrice = float(prix) * (1 +tva/100)
-
-    return _newPrice
 
 
-print(TVA(10,20))
-
-
-
-def moyenne_math2(note1,note2,note3,note4,note5):
-    _math = (((note1+note2+note3) / 3) + ((note4+note4+note5+note5)) / 4) /2
-
-    return _math
-
-print(moyenne_math2(20,20,20,0,0))
+Bac =  moyenne_Bac(10,10,10,10,10,10,10,10,10,10,10,10,10,10)
 
 if Bac <= 7.99:
     print("Refusé")
@@ -53,3 +41,5 @@ elif Bac >= 16 and Bac <= 17.99:
     print("Très bien")
 elif Bac >= 18:
     print("Felicitation")
+else : 
+    print("erreur")
