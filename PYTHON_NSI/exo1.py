@@ -7,3 +7,4 @@ def moyenne_math2(note1,note2,note3,note4,note5):
 
 print(moyenne_math2(20,20,20,0,0))
 
+

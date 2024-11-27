@@ -1,4 +1,5 @@
 
+#Exo I : 
 def moyenne_Bac(_note1,_note2,_note3,_note4,_note5,_note6,_note7,_coef1,_coef2,_coef3,_coef4,_coef5,_coef6,_coef7):
 
     _moyenneG = 0
@@ -32,11 +33,9 @@ def TVA(prix,tva):
 
     return _newPrice
 
-
-
 print(moyenne_math2(20,20,20,0,0))
 print(TVA(10,20))
-Bac = 10 
+Bac = 22
 
 
 if Bac <= 7.99:
@@ -51,9 +50,33 @@ elif Bac >= 14 and Bac <= 15.99:
     print("Bien ")
 elif Bac >= 16 and Bac <= 17.99:
     print("Très bien")
-elif Bac >= 18:
+elif Bac >= 18 and Bac <= 21:
     print("Felicitation")
-elif Bac >= 21 :
-    print("Felicitations")
+
 else : 
     print("non")
+
+#Exo II : 
+
+enceinte = 0
+age = int(input("entrez votre age: "))
+
+sexe_femme = input("si vous êtes une femme entrez : oui : ")
+if sexe_femme == "oui":
+    sexe_femme = True
+
+if sexe_femme == True:
+    enceinte = input("si vous êtes enceinte écrivez : oui: ")
+if enceinte == "oui":
+    enceinte = True
+
+
+if age <= 17.99 : 
+    print("non trop petit")
+
+if sexe_femme == True and enceinte == True:
+    print("non pas bon pour le bébé")
+if age >= 18 and enceinte != "oui" :
+    print("oui c'est bon")
+    
+#Exo III: 
