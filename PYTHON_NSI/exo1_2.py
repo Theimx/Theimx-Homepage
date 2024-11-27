@@ -1,43 +1,48 @@
 
-def moyenne_Bac(note1,note2,note3,note4,note5,note6,note7,coef1,coef2,coef3,coef4,coef5,coef6,coef7):
+def moyenne_Bac(_note1,_note2,_note3,_note4,_note5,_note6,_note7,_coef1,_coef2,_coef3,_coef4,_coef5,_coef6,_coef7):
 
-    moyenneG = 0
-    coefG = 0 
-    moyenneG = moyenneG + note1 * coef1
-    coefG += coef1
-    moyenneG = moyenneG + note2 * coef2 
-    coefG += coef2 
-    moyenneG = moyenneG + note3 * coef3 
-    coefG += coef3 
-    moyenneG = moyenneG + note4 * coef4 
-    coefG += coef4 
-    moyenneG = moyenneG + note5 * coef5 
-    coefG += coef5 
-    moyenneG = moyenneG + note6 * coef6 
-    coefG += coef6
-    moyenneG = moyenneG + note7 * coef7
-    coefG += coef7
+    _moyenneG = 0
+    _coefG = 0 
+    _moyenneG = _moyenneG + _note1 * _coef1
+    _coefG += _coef1
+    _moyenneG = _moyenneG + _note2 * _coef2 
+    _coefG += coef2 
+    _moyenneG = _moyenneG + _note3 * _coef3 
+    _coefG += coef3 
+    _moyenneG = _moyenneG + _note4 * _coef4 
+    _coefG += _coef4 
+    _moyenneG = _moyenneG + _note5 * _coef5 
+    _coefG += _coef5 
+    _moyenneG = _moyenneG + _note6 * _coef6 
+    _coefG += _coef6
+    _moyenneG = _moyenneG + _note7 * _coef7
+    _coefG += _coef7
 
-    Bac = moyenneG /coefG
+    Bac = _moyenneG /_coefG
 
     return Bac
-
-def TVA(prix,tva):
-    _newPrice = float(prix) * (1 +tva/100)
-
-    return _newPrice
-
-
-print(TVA(10,20))
-
-
 
 def moyenne_math2(note1,note2,note3,note4,note5):
     _math = (((note1+note2+note3) / 3) + ((note4+note4+note5+note5)) / 4) /2
 
     return _math
 
+def TVA(prix,tva):
+    _newPrice = float(prix) * (1 +tva/100)
+
+    return _newPrice
+
+def moyenne_math2(note1,note2,note3,note4,note5):
+    _math = (((note1+note2+note3) / 3) + ((note4+note4+note5+note5)) / 4) /2
+
+    return _math
+
+
+
 print(moyenne_math2(20,20,20,0,0))
+print(TVA(10,20))
+Bac = 10 
+
 
 if Bac <= 7.99:
     print("Refusé")

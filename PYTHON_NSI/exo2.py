@@ -19,4 +19,3 @@ if sexe_femme == True and enceinte == True:
 if age >= 18 and enceinte != "oui" :
     print("oui c'est bon")
     
-    
