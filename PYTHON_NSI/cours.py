@@ -1,6 +1,4 @@
-
 #Exo I : 
-print("Exo I")
 
 def moyenne_Bac(_note1,_note2,_note3,_note4,_note5,_note6,_note7,_coef1,_coef2,_coef3,_coef4,_coef5,_coef6,_coef7):
 
@@ -35,31 +33,28 @@ def TVA(prix,tva):
 
     return _newPrice
 
-print(moyenne_math2(20,20,20,0,0))
-print(TVA(10,20))
-Bac = 22
+def bach(note):
+    Bac = float(note)
 
-if Bac <= 7.99:
-    print("Refusé")
-elif Bac >= 8 and Bac <= 9.99 : 
-    print("Ratrapage")
-elif Bac >= 10 and Bac <= 11.99:
-    print("Bac sans mention")
-elif Bac >= 12 and Bac <= 13.99:
-    print("Mention Assez bien")
-elif Bac >= 14 and Bac <= 15.99:
-    print("Bien ")
-elif Bac >= 16 and Bac <= 17.99:
-    print("Très bien")
-elif Bac >= 18 and Bac <= 21:
-    print("Felicitation")
+    if Bac <= 7.99:
+        print("Refusé")
+    elif Bac >= 8 and Bac <= 9.99 : 
+        print("Ratrapage")
+    elif Bac >= 10 and Bac <= 11.99:
+        print("Bac sans mention")
+    elif Bac >= 12 and Bac <= 13.99:
+        print("Mention Assez bien")
+    elif Bac >= 14 and Bac <= 15.99:
+        print("Bien ")
+    elif Bac >= 16 and Bac <= 17.99:
+        print("Très bien")
+    elif Bac >= 18 and Bac <= 21:
+        print("Felicitation")
 
-else : 
-    print("non")
+    else : 
+        print("non")
 
 #Exo II : 
-
-print("Exo II")
 
 def alcool():
 
@@ -100,8 +95,6 @@ def maison():
 
 def taille_chaine(_chaine):
     return int(len(str(_chaine)))
-
-
 
 #exo bonus I
 
