@@ -1,5 +1,7 @@
 
 #Exo I : 
+print("Exo I")
+
 def moyenne_Bac(_note1,_note2,_note3,_note4,_note5,_note6,_note7,_coef1,_coef2,_coef3,_coef4,_coef5,_coef6,_coef7):
 
     _moyenneG = 0
@@ -23,8 +25,8 @@ def moyenne_Bac(_note1,_note2,_note3,_note4,_note5,_note6,_note7,_coef1,_coef2,_
 
     return Bac
 
-def moyenne_math2(note1,note2,note3,note4,note5):
-    _math = (((note1+note2+note3) / 3) + ((note4+note4+note5+note5)) / 4) /2
+def moyenne_math2(_note1,_note2,_note3,_note4,_note5):
+    _math = (((_note1+_note2+_note3) / 3) + ((_note4+_note4+_note5+_note5)) / 4) /2
 
     return _math
 
@@ -36,7 +38,6 @@ def TVA(prix,tva):
 print(moyenne_math2(20,20,20,0,0))
 print(TVA(10,20))
 Bac = 22
-
 
 if Bac <= 7.99:
     print("Refusé")
@@ -58,25 +59,50 @@ else :
 
 #Exo II : 
 
-enceinte = 0
-age = int(input("entrez votre age: "))
+# print("Exo II")
+# enceinte = 0
+# age = int(input("entrez votre age: "))
 
-sexe_femme = input("si vous êtes une femme entrez : oui : ")
-if sexe_femme == "oui":
-    sexe_femme = True
+# sexe_femme = input("si vous êtes une femme entrez : oui : ")
+# if sexe_femme == "oui":
+#     sexe_femme = True
 
-if sexe_femme == True:
-    enceinte = input("si vous êtes enceinte écrivez : oui: ")
-if enceinte == "oui":
-    enceinte = True
+# if sexe_femme == True:
+#     enceinte = input("si vous êtes enceinte écrivez : oui: ")
+# if enceinte == "oui":
+#     enceinte = True
 
 
-if age <= 17.99 : 
-    print("non trop petit")
+# if age <= 17.99 : 
+#     print("non trop petit")
 
-if sexe_femme == True and enceinte == True:
-    print("non pas bon pour le bébé")
-if age >= 18 and enceinte != "oui" :
-    print("oui c'est bon")
+# if sexe_femme == True and enceinte == True:
+#     print("non pas bon pour le bébé")
+# if age >= 18 and enceinte != "oui" :
+#     print("oui c'est bon")
     
 #Exo III: 
+print("Exo III")
+
+prix_base = 206000
+nb_années = 15
+inflations = 1 + (3/100)
+
+for i in range (nb_années):
+    print(prix_base * inflations)   
+    prix_base = prix_base * inflations
+
+#exo IV : 
+
+def taille_chaine(_chaine):
+    return int(len(str(_chaine)))
+
+print(taille_chaine("Tesjhhjbt"))
+
+#exo bonus I
+
+for i in range(101):
+    print(i)
+
+#Exo V:
+
