@@ -1,6 +1,6 @@
 #Exo I : 
 
-def moyenne_Bac(_note1,_note2,_note3,_note4,_note5,_note6,_note7,_coef1,_coef2,_coef3,_coef4,_coef5,_coef6,_coef7):
+def moyenne_Bac(_note1,_note2,_note3,_coef1,_coef2,_coef3,):
 
     _moyenneG = 0
     _coefG = 0 
@@ -10,18 +10,10 @@ def moyenne_Bac(_note1,_note2,_note3,_note4,_note5,_note6,_note7,_coef1,_coef2,_
     _coefG += coef2 
     _moyenneG = _moyenneG + _note3 * _coef3 
     _coefG += coef3 
-    _moyenneG = _moyenneG + _note4 * _coef4 
-    _coefG += _coef4 
-    _moyenneG = _moyenneG + _note5 * _coef5 
-    _coefG += _coef5 
-    _moyenneG = _moyenneG + _note6 * _coef6 
-    _coefG += _coef6
-    _moyenneG = _moyenneG + _note7 * _coef7
-    _coefG += _coef7
 
-    Bac = _moyenneG /_coefG
+    _bac = _moyenneG /_coefG
 
-    return Bac
+    return _bac
 
 def moyenne_math2(_note1,_note2,_note3,_note4,_note5):
     _math = (((_note1+_note2+_note3) / 3) + ((_note4+_note4+_note5+_note5)) / 4) /2
@@ -96,7 +88,7 @@ def maison():
 def taille_chaine(_chaine):
     return int(len(str(_chaine)))
 
-#exo bonus I
+#exo cours 28/11
 
 def hundred():
     for i in range(101):
@@ -126,3 +118,26 @@ def week():
             if i == 6:
                 print("jour", i+1, "semaine" ,a+1,"donc Vendredi")
 
+#Exo cours 4/12
+
+def voyelledansmot(_mots):
+
+    for i in _mots:
+        if i == "a" or i == "e" or i == "i" or i == "o" or i == "u" or i == "y" or i == "A" or i == "E" or i == "I" or i == "O" or i == "U" or i == "Y":
+            print("voyelle :" + i )
+        else : 
+            print("autres : " + i )
+
+    #faut parcourir des choses avec les boucles for
+
+#Les boucles non bornées
+
+def tablemultiplication():
+    reponse = 0
+    
+    while reponse != 5*6: 
+        reponse = int(input("combien fond 5 fois 6 ?"))
+    print("gg")
+
+
+    
