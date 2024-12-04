@@ -138,3 +138,6 @@ def tablemultiplication():
         _reponse = int(input("combien fond 5 fois 6 ?"))
     print("gg")
 
+
+
+
