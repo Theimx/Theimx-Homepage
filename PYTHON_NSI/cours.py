@@ -118,7 +118,7 @@ def week():
             if i == 6:
                 print("jour", i+1, "semaine" ,a+1,"donc Vendredi")
 
-#Exo cours 4/12
+#Exo cours 4/12 : Boucle Borné et non Borné
 
 def voyelledansmot(_mots):
 
@@ -130,14 +130,11 @@ def voyelledansmot(_mots):
 
     #faut parcourir des choses avec les boucles for
 
-#Les boucles non bornées
-
 def tablemultiplication():
-    reponse = 0
-    
-    while reponse != 5*6: 
-        reponse = int(input("combien fond 5 fois 6 ?"))
+    _reponse = 0
+    _chiffre1 = 5
+    _chiffre2 = 6
+    while _reponse != _chiffre1 * _chiffre2 : 
+        _reponse = int(input("combien fond 5 fois 6 ?"))
     print("gg")
 
-
-    
