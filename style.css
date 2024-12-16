@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    scroll-behavior: smooth; /* Défilement fluide */
+}
+
+/* Barre latérale */
+.sidebar {
+    width: 70px; /* Par défaut : format petit */
+    height: 100vh;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar.expanded {
+    width: 250px; /* Format allongé */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    display: none; /* Liens cachés par défaut */
+}
+
+.sidebar.expanded ul {
+    display: block; /* Liens visibles quand allongée */
+}
+
+.sidebar ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li:hover {
+    background-color: #f1f1f1;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.sidebar ul li a i {
+    font-size: 20px;
+    margin-right: 20px;
+    transition: margin-right 0.3s;
+}
+
+.sidebar.expanded ul li a i {
+    margin-right: 20px;
+}
+
+.sidebar ul li a span {
+    flex-grow: 1;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    opacity: 0; /* Texte invisible par défaut */
+    transition: opacity 0.3s, visibility 0.3s;
+    visibility: hidden;
+}
+
+.sidebar.expanded ul li a span {
+    opacity: 1; /* Texte visible */
+    visibility: visible;
+}
+
+/* Bouton pour rétracter/étendre */
+.toggle-btn {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #333;
+    font-size: 20px;
+    margin: 10px;
+    align-self: flex-start;
+}
+
+/* Contenu principal */
+.content {
+    margin-left: 70px; /* Par défaut : barre petite */
+    padding: 20px;
+    transition: margin-left 0.3s;
+    width: 100%;
+}
+
+.content.expanded {
+    margin-left: 250px; /* Barre allongée */
+}
+
+section {
+    margin: 50px 0;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
