@@ -1,0 +1,19 @@
+
+
+body {
+    background-color: wheat;
+    color: rgb(208, 8, 155);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+h2 {
+    text-align:left ;
+
+}
+
+p {
+    text-align:center ;
+
+}
